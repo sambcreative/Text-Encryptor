@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Encryptor</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width"> 
+   
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+</head>
+  
+<body>
+  <img id="logo" src="images/logo.png" alt="Alura logo">
+  <div class="container">
+  
+ 
+    <div class="top-container" id="first-container">
+   <div>  
+  <textarea id="txt" placeholder="Ingrese el texto aqui" rows="2" cols="20" wrap="hard" onkeyup="return letrachica(this);"></textarea>
+  <p class="legenda"><i class="material-symbols-outlined">Error</i>Solo letras minusculas y sin acentos</p>
+   </div> 
+    
+  
+   
+
+  <div class="button-container">  
+
+    <button id="encriptar" class="boton" type="button" onclick="encriptarFuncion()">Encriptar</button>
+  <button id="desencriptar" class="boton" type="button" onclick="desencriptarFuncion()">Desencriptar</button>
+
+  </div>
+    </div> 
+    
+  <div class="botton-container">
+    <div id="nomensaje-container">
+
+      <img id="nomensaje" src="images/nothinglogo.png" alt="Ningung mensaje fue encontrado"> 
+    <p id ="msj" class="mensaje1">Ningun mensaje fue encontrado</p> 
+
+  </div>
+
+    <p id="txt2">Ingresea el texto que desees encriptar o desencriptar</p>
+    <button class="boton" type="boton" id="copiar" onclick="copiarFuncion()">Copiar</button>
+    
+    </div>
+  </div>
+  
+ 
+     
+    
+  <script src="script.js"></script>
+</body>
+</html>
